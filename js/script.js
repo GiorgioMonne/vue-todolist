@@ -31,14 +31,13 @@ const app = new Vue({
             }
         ],
         inputValue:"",
-        done = false
     },
     methods:{
         addLista: function(){
             if(this.inputValue != ""){
                 this.lista.push({
                     text:this.inputValue,
-                    done=false
+                    done:false
                 });
                 
                 this.inputValue ="";

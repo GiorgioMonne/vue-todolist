@@ -36,7 +36,7 @@
 
             <div class="lista">
                 <ul v-if="lista.length > 0">
-                    <li v-for="(riga,index) in lista">{{text}} <i class="fas fa-times" @click ="removeLista"></i></li>
+                    <li v-for="(riga,index) in lista">{{riga.text}} <i class="fas fa-times" @click ="removeLista"></i></li>
                     <h2 v-else>Lista vuota :(</h2>
                 </ul>
             </div>
