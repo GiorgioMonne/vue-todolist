@@ -72,29 +72,36 @@ main{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .container{
-    /* height: 300px; */
+    margin-top: 50px;
     width: 600px;
     left: 50%;
-    top: 30%;
+    top: 80%;
     border-radius: 3px ;
-    transform: translate(-50% , -70%);
+    transform: translate(-50% , -20%);
     position: absolute;
     background-color: lightgrey;
 }
 
 
-.todo li{
+.lista li{
     list-style: none;
     padding: 5px;
     margin: 5px 3px;
     border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    
 }
-/* .todo li:nth-last-child(){
+
+.lista i{
+    display: flex;
+}
    
-} */
+
 
 
 /* ***FOOTER*** */

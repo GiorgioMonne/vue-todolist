@@ -12,3 +12,36 @@
 // Bonus:
 // 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
 // 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+
+const app = new Vue({
+    el : '#root',
+    data:{
+        lista:[
+            {
+                text:'fare la spesa',
+                // done:false
+            },
+            {
+                text:'cucinare il ragù',
+                // done:true
+            },
+            {
+                text:'tagliare l erba',
+                // done:false
+            }
+        ],
+        inputValue:""
+    },
+    methods:{
+        addLista: function(){
+            if(this.inputValue != ""){
+                this.lista.push(this.inputValue);
+                this.lista.push();
+                this.inputValue ="";
+            }
+        },
+        removeLista:function(index){
+            this.lista.splice(index,1);
+        }
+    }
+});
