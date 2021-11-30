@@ -19,24 +19,28 @@ const app = new Vue({
         lista:[
             {
                 text:'fare la spesa',
-                // done:false
+                done:false
             },
             {
                 text:'cucinare il ragù',
-                // done:true
+                done:true
             },
             {
                 text:'tagliare l erba',
-                // done:false
+                done:false
             }
         ],
-        inputValue:""
+        inputValue:"",
+        done = false
     },
     methods:{
         addLista: function(){
             if(this.inputValue != ""){
-                this.lista.push(this.inputValue);
-                this.lista.push();
+                this.lista.push({
+                    text:this.inputValue,
+                    done=false
+                });
+                
                 this.inputValue ="";
             }
         },
