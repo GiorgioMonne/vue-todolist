@@ -27,7 +27,7 @@
 
         <div class="dati-input">
 
-            <input type="text" placeholder="Inserisci il testo da inserire" >
+            <input type="text" placeholder="Inserisci il testo da inserire" v-model="inputValue" @keyup.enter="addLista()">
             <button @click = "addLista()">Aggiungi</button>
 
         </div>
