@@ -6,8 +6,95 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+}
+
 /* ***HEADER*** */
 
+header{
+    height: 200px;
+    /* background-color: aquamarine; */
+} 
+
+.logo{
+    height: 100px;
+    text-align: center;
+    /* background-color: brown; */
+    text-align: center;
+}
+
+.logo img{
+    height: 100px;
+    object-fit: cover;
+    
+}
+
+.titolo{
+    height: 100px;
+    text-align: center;
+    /* background-color: lightskyblue; */
+}
+
+.titolo h1 {
+    font-size: 50px;
+    /* color: aquamarine; */
+    line-height: 100px;
+}
+
 /* ***MAIN*** */
+
+main{
+    height: calc(100% - 200px);
+    /* background-color: red; */
+    position: relative;
+}
+
+.dati-input{
+    height: 30px;
+    /* background-color: lightsalmon; */
+    text-align: center;
+}
+
+.dati-input input{
+    height: 30px;
+    border:1px solid lightgrey ;
+    border-radius:3px;
+    padding: 0 3px;
+}
+
+.dati-input button{
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 3px;
+    background-color: rgb(79, 251, 194);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.container{
+    /* height: 300px; */
+    width: 600px;
+    left: 50%;
+    top: 30%;
+    border-radius: 3px ;
+    transform: translate(-50% , -70%);
+    position: absolute;
+    background-color: lightgrey;
+}
+
+
+.todo li{
+    list-style: none;
+    padding: 5px;
+    margin: 5px 3px;
+    border-bottom: 1px solid grey;
+}
+/* .todo li:nth-last-child(){
+   
+} */
+
 
 /* ***FOOTER*** */
